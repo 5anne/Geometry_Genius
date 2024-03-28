@@ -20,7 +20,7 @@
                     <figure><img src="images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="text-center text-2xl font-semibold">Triangle</h2>
-                      <p class="text-center">Area = 0.5 x b x h</p>
+                      <p class="text-center">Area(A) = 0.5 x b x h</p>
                       <div>
                         <input id="base" class="w-16 text-2xl bg-slate-100 p-2 rounded-sm" type="text" placeholder="b">
                         <span class="mr-2 ml-2">cm</span>
@@ -36,12 +36,21 @@
                     </div>
                   </div>
                 <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="text-2xl text-center font-semibold">Rectangle</h2>
+                      <p class="text-center">Area(A) = W x l</p>
+                      <div>
+                        <input id="width" class="w-16 text-2xl bg-slate-100 p-2 rounded-sm" type="text" placeholder="W">
+                        <span class="mr-2 ml-2">cm</span>
+                        <input id="length" class="w-16 text-2xl bg-slate-100 p-2 rounded-sm" type="text" placeholder="l">
+                        <span class="ml-2">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area: <span id="rectangle-area"> </span> <span>cm<sup>2</sup></span></p>
+                      </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -62,5 +71,6 @@
         </div>
     </main>
     <script src="scripts/triangle.calculate.js"></script>
+    <script src="scripts/rectangle.calculate.js"></script>
 </body>
 </html>
